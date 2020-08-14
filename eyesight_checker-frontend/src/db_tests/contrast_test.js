@@ -27,7 +27,7 @@ const contrastTest = [
    ]
  },
  {
-   question: 'Choose two the most contrast picture',
+   question: 'Choose the most contrast picture',
    answers: [
      { image: 'contrast_4_1.jpg', correct: true },
      { image: 'contrast_4_2.jpg', correct: false }, 

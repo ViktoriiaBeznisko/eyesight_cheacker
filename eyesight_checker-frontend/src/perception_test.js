@@ -18,15 +18,14 @@ nextButton2.addEventListener('click', () => {
 }) 
 
 closeButton2.addEventListener('click', () => {
-  questionContainerElement.classList.add('hide')
+  questionContainerElement2.classList.add('hide')
   elementBody.classList.remove('wrong', 'correct')
 }) 
 
 
 function callUsersLoginForm2() {
-  testContainerElement2.classList.add('hide')
   usersFormElement.classList.remove('hide')
-
+  testContainerElement2.classList.add('hide')
   createForm()
 }
 
@@ -86,12 +85,8 @@ function showQuestion2(question) {
     button.addEventListener('click', selectAnswer2)
     answerButtonsElement2.appendChild(button)
   })
-  // if(questionElement2.children().length > 0) {
-  //   questionElement2.removeChild[0]
-  // }
   answerButtonsElement2.classList.remove('disable')
 }
-
 
 
 function resetState2() {
