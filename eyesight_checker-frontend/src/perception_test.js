@@ -33,7 +33,7 @@ function startTest2() {
   countRightAnswers2 = 0
   rightAnswers2.innerHTML = countRightAnswers2 + " - out of 11 possible questions"
   answerButtonsElement2.classList.remove('disable')
-  createUsersTest(users_id, users_name)
+  createUsersTest2(users_id, users_name)
   startButton2.classList.add('hide')
   shuffledQuestions2 = perceptionTest.sort(() => Math.random() - .5)
   currentQuestionIndex2 = 0
@@ -113,7 +113,7 @@ function selectAnswer2(e) {
   if (shuffledQuestions2.length > (currentQuestionIndex2 + 1)) {
     nextButton2.classList.remove('hide') 
   } else {
-    updateUsersTest(countRightAnswers, users_tests_id)
+    updateUsersTest(countRightAnswers2, users_tests_id)
     closeButton2.innerText = 'Done'
     closeButton2.classList.remove('hide')
   }
